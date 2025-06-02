@@ -1,0 +1,25 @@
+{
+  "nombre": "Cristian Pérez Rodriguez",
+  "email": "cristianperezrodriguez7@gmail.com",
+  "resumen": "Camarero de sala y Barista, transformandose en técnico de instalación y reparcion de sistemas operativos.Siempre he sido una persona muy entregada a mi trbajo y muy responsable con mis labores empecé en este mundo ya que no quería seguir estudiando y me di cuenta que es un mundo en el cual hay muchos profesionales de ellos y no cualquiera vale para esta profesión. Una vez después de mi larga experiencia en este mundo he decidido cambiar de sector y este mundo siempre me ha llamado mucho la atención y ahora que he empezado a empaparme de información y gracias al tutor que me ha tocado se me ha echo muy sencillo el poder entender muchos conceptos e incluso crear este curriculum a través de html y poder compartirlo en un servidor web que nos han echo. ",
+  "experiencia": [
+    "Barista | Cafería de especialidad (BAMBU) (2023-2024)",
+    "Store Manager en Manolo Bakes (2022-2023)",
+    "Team Leader en Manolo Bakes (2021-2022)",
+    "Personal base en Manolo Bakes (2020-2021)",
+    "Jefe de Rango Malavida de Tapas y Vinos (2019-2019)",
+    "Camarero de sala en Restaurante el Corte Ingles (2018-2019)",
+    "Camarero de sala en Toc Tapas (2016-2018)",
+    "Peón de albañileria (2015-2016)",
+    "Esta la vamos a inventar para ver como se añade"
+
+  ],
+  "educacion": [
+    "Enseñanza Secundaria Obligatoria (2015)",
+    "Curso de hosteleria enfocada a sala (2016)",
+    "Curso excel (2022)",
+    "Modulo de instalación y configuración de Sistemas Operativos",
+    "Modulo de mantenimiento de los subsistemas informaticos",
+    "Mantenimiento de los subsistemas lógicos de equipos microinformáticos"
+  ]
+}

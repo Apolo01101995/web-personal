@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Mis Diseños</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para la fuente Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos para el efecto de sombra y redondeado de las imágenes */
+        .image-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .image-card:hover {
+            transform: translateY(-5px) scale(1.02); /* Pequeño levantamiento y zoom al pasar el ratón */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-100 to-blue-100 min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-md py-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 leading-tight">
+                Mis Diseños
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-gray-600 hover:text-purple-700 text-lg font-medium transition duration-300 ease-in-out">Inicio</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-purple-700 text-lg font-medium transition duration-300 ease-in-out">Acerca de</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-purple-700 text-lg font-medium transition duration-300 ease-in-out">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4 sm:p-6 lg:p-8">
+        <section class="text-center mb-10">
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                Explora una colección de mis trabajos más recientes. Cada diseño es una expresión de creatividad y detalle.
+            </p>
+        </section>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden image-card">
+                <img src="WhatsApp Image 2025-06-02 at 13.24.03 (1).jpeg" alt="Diseño 0" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Diseño Minimalista</h3>
+                    <p class="text-gray-600 text-sm">Un enfoque limpio y moderno, priorizando la funcionalidad.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden image-card">
+                <img src="WhatsApp Image 2025-06-02 at 13.24.02.jpeg" alt="Diseño 1" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Proyecto Urbano</h3>
+                    <p class="text-gray-600 text-sm">Integración de elementos naturales en el entorno urbano.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden image-card">
+                <img src="WhatsApp Image 2025-06-02 at 13.24.03 (1).jpeg" alt="Diseño 2" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Concepto Innovador</h3>
+                    <p class="text-gray-600 text-sm">Explorando nuevas formas y materiales para el futuro.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden image-card">
+                <img src="WhatsApp Image 2025-06-02 at 13.24.03 (2).jpeg" alt="Diseño 3" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Diseño Orgánico</h3>
+                    <p class="text-gray-600 text-sm">Inspirado en la naturaleza, con líneas suaves y fluidas.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden image-card">
+                <img src="WhatsApp Image 2025-06-02 at 13.24.03 (3).jpeg" alt="Diseño 4" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Estilo Geométrico</h3>
+                    <p class="text-gray-600 text-sm">Juego de formas y patrones para un impacto visual.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden image-card">
+                <img src="WhatsApp Image 2025-06-02 at 13.24.03.jpeg" alt="Diseño 5" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Armonía de Colores</h3>
+                    <p class="text-gray-600 text-sm">Combinación de tonos para crear una atmósfera única.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 px-4 sm:px-6 lg:px-8 mt-10">
+        <div class="max-w-7xl mx-auto text-center text-gray-400">
+            <p>&copy; 2025 Mis Diseños. Todos los derechos reservados.</p>
+            <p class="mt-2">Diseñado con <span class="text-red-500">&hearts;</span> y Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

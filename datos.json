@@ -1,6 +1,5 @@
 {
   "nombre": "Cristian Pérez Rodriguez",
-  "email": "cristianperezrodriguez7@gmail.com",
   "resumen": "Camarero de sala y Barista, transformandose en técnico de instalación y reparcion de sistemas operativos.Siempre he sido una persona muy entregada a mi trbajo y muy responsable con mis labores empecé en este mundo ya que no quería seguir estudiando y me di cuenta que es un mundo en el cual hay muchos profesionales de ellos y no cualquiera vale para esta profesión. Una vez después de mi larga experiencia en este mundo he decidido cambiar de sector y este mundo siempre me ha llamado mucho la atención y ahora que he empezado a empaparme de información y gracias al tutor que me ha tocado se me ha echo muy sencillo el poder entender muchos conceptos e incluso crear este curriculum a través de html y poder compartirlo en un servidor web que nos han echo. ",
   "experiencia": [
     "Barista | Cafería de especialidad (BAMBU) (2023-2024)",
@@ -13,7 +12,17 @@
     "Peón de albañileria (2015-2016)",
     "Esta la vamos a inventar para ver como se añade"
 
+    
   ],
+
+  "Funciones": ["Toma de comanda y manejo de bandeja",
+        "Control de stokaje y proyección de facturación",
+        "Control de pedido e inventario",
+        "Control de equipo de personas y aumento de rendimiento del equipo de trabajo",
+        "Latte art y elaboración de diferentes tipos de bebidad a base de café"
+    
+  ],
+
   "educacion": [
     "Enseñanza Secundaria Obligatoria (2015)",
     "Curso de hosteleria enfocada a sala (2016)",

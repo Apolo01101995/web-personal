@@ -4,7 +4,6 @@ fetch('datos.json')
     document.getElementById('nombre').textContent = data.nombre;
     document.getElementById('email').textContent = data.email;
     document.getElementById('resumen').textContent = data.resumen;
-
     const expList = document.getElementById('experiencia');
     data.experiencia.forEach(item => {
       const li = document.createElement('li');
@@ -12,6 +11,13 @@ fetch('datos.json')
       expList.appendChild(li);
     });
 
+    const funlist = document.getElementById('Funciones');
+    data.Funciones.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      funlist.appendChild(li);
+    });
+    
     const eduList = document.getElementById('educacion');
     data.educacion.forEach(item => {
       const li = document.createElement('li');

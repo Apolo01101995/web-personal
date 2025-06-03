@@ -1,3 +1,33 @@
+/* --- 2. Encabezado y Navegación --- */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1em 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex; /* Convierte el header en un contenedor flex */
+  flex-direction: column; /* Apila los elementos hijos (nav, typewriter-text) verticalmente */
+  align-items: center; /* Centra los elementos hijos horizontalmente dentro del header */
+  width: 100%; /* Asegura que el header ocupe todo el ancho */
+}
+
+nav {
+  /* Añadir esto para asegurar que el nav ocupe el ancho completo y sus ítems se centren */
+  width: 100%;
+  text-align: center; /* Esto centrará el contenido inline-block dentro del nav */
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente en móvil */
+  align-items: center; /* Centra los elementos apilados */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px; /* Espacio entre los elementos de navegación apilados */
+  justify-content: center; /* Centra los ítems de la lista si hay espacio extra */
+  width: 100%; /* Asegura que la lista ocupe el ancho completo del nav */
+}
+
 body {
   font-family: 'Roboto', sans-serif; /* Fuente principal para el texto del cuerpo */
   line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
@@ -15,6 +45,7 @@ body {
     animation:
         typing 3.5s steps(24, end), /* 3.5s es la duración, 40 es el número de caracteres */
         blink-caret .75s step-end infinite; /* Animación del cursor */
+    width: fit-content;
 }
 
 /* Animación de escritura */
@@ -116,7 +147,7 @@ header {
 
 nav ul {
   display: flex;
-  flex-direction: column; /* Apila los elementos verticalmente en móvil */
+  flex-direction: column-reverse; /* Apila los elementos verticalmente en móvil */
   align-items: center; /* Centra los elementos apilados */
   list-style: none;
   padding: 0;
@@ -200,6 +231,61 @@ footer a:hover {
   color: #977109;
 }
 
+/* --- New Accordion Styles --- */
+.accordion-item {
+  background-color: #535050; /* Matches main CV background */
+  border: 1px solid #6d6868; /* Slightly darker border for separation */
+  margin-bottom: 1em; /* Space between accordion items */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.accordion-button {
+  background-color: #6d6868; /* Matches H1 background */
+  color: #ffffff; /* White text for header */
+  font-family: 'Montserrat', sans-serif; /* Consistent font */
+  font-size: 1.2em; /* Slightly smaller than H2 but still prominent */
+  font-weight: 700; /* Bold */
+  border-bottom: 2px solid #000000; /* Similar to H2 border */
+  padding: 1em 1.2em; /* Ample padding */
+  text-align: left; /* Align text to left */
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #535050; /* Darker on active */
+  color: #ecad25; /* Accent color when open */
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  border-bottom: 2px solid #ecad25; /* Accent border when open */
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* Remove default focus outline */
+  border-color: transparent; /* Prevent blue outline */
+}
+
+.accordion-body {
+  background-color: #535050; /* Matches main CV background */
+  color: #ffffff; /* White text for content */
+  padding: 1.5em; /* Padding for content */
+  border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+}
+
+.accordion-body ul {
+  list-style: none; /* Remove default list style */
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-body ul li {
+  background-color: #ecad259f; /* Matches existing list item background */
+  margin-bottom: 0.8em;
+  padding: 1em 1.2em;
+  border-left: 5px solid #34373b;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  color: #333; /* Ensure text within list items is readable */
+}
 
 /* --- 5. Media Queries para Responsividad --- */
 
@@ -255,6 +341,10 @@ footer a:hover {
   .social-links a {
     font-size: 2em; /* Iconos más grandes */
   }
+
+  .accordion-button {
+    font-size: 1.5em; /* Adjust font size for larger screens */
+  }
 }
 
 /* Para escritorios grandes (ancho mínimo de 1024px) */
@@ -296,5 +386,9 @@ footer a:hover {
 
   .social-links a {
     font-size: 2.2em; /* Iconos aún más grandes */
+  }
+
+  .accordion-button {
+    font-size: 1.8em; /* Adjust font size for even larger screens */
   }
 }
